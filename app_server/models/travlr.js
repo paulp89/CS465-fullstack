@@ -11,5 +11,9 @@ const tripSchema = new mongoose.Schema({
     image: { type: String, required: true },
     description: { type: String, required: true }
 });
+<<<<<<< HEAD
 const Trip = mongoose.model('trips', tripSchema);
+=======
+const Trip = mongoose.model('Trip', tripSchema);
+>>>>>>> 4e5460bef880a1fd234a8fff03d628d0629379c6
 module.exports = Trip;
