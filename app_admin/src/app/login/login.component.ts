@@ -27,6 +27,7 @@ constructor(
   private router: Router,
   private authenticationService: AuthenticationService
   ) { }
+  
   ngOnInit(): void {
   }
 
@@ -46,6 +47,7 @@ constructor(
       name: this.credentials.name,
       email: this.credentials.email
       } as User;
+      
       // console.log('LoginComponent::doLogin');
       // console.log(this.credentials);
       this.authenticationService.login(newUser,
